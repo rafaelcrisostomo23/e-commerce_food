@@ -1,0 +1,6 @@
+HEX #C10016 Vermelho
+HEX #581200 Marron escuro
+HEX #89613E Marron claro
+HEX #FFFFFF Branco
+HEX #7E5A5A (CADASTRO 1)
+HEX #D9D9D9 (CADASTRO 2)

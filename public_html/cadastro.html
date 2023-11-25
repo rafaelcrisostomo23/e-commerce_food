@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Rafael Crisóstomo">
+        <link rel="shortcut icon" href="..\imagens\logo-icone.ico" type="image/x-icon">
+        <title>Cadastro - Pastelaria Parapuã</title>
+    </head>
+
+    <body>
+        <div class="logo"> 
+            <img src="assets/logo/cadastro.png" alt="imagens da logo pastelaria">
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="autor.html">Sobre o Autor</a></li>
+            </ul>
+        </div>
+        <hr color="red">  
+
+        <h2>Cadastro de Clientes</h2>
+
+    <form action="/submit_cadastro" method="post">
+    <label for="fname">Nome:</label><br>
+    <input type="text" id="fname" name="fname" required><br>
+
+    <label for="lname">Sobrenome:</label><br>
+    <input type="text" id="lname" name="lname" required><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="tel">Telefone:</label><br>
+    <input type="tel" id="tel" name="tel" required><br>
+
+    <label for="end">Endereço:</label><br>
+    <input type="end" id="end" name="end" required><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" required><br>
+
+    <label for="c_senha">Confirmar Senha:</label><br>
+    <input type="password" id="c_senha" name="c_senha" required><br>
+    <br>
+    <input type="submit" value="Cadastrar">
+    </form>
+    
+    <div class="rodape">
+        <p>&copy; 2022 | Autor: João da Silva | E-mail: joao.silva@email.com | Página: 1 de 2</p>
+       </div>
+
+    </body>
+
+
+</html>

@@ -1,19 +1,9 @@
 /* Smartphone Landscape */
-@media (min-width: 576px) {
-
-    }
+@media (min-width: 576px) {    }
   /* Tablet Portrait */
-@media (min-width: 768px) {
-
-}
-
+@media (min-width: 768px) {}
 /* Tablet Landscape */
-@media (min-width: 992px) {
-
-}
-
+@media (min-width: 992px) {}
 /* PC */
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
 

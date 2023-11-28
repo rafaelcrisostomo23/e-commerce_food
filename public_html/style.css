@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.menu a {
+  display: grid;
+  font-family: 'Chewy';
+  font-size: 2em;
+  justify-content: center; 
+}
+
+.menu a {
+  
+}
+
 /* Smartphone Landscape */
-@media (min-width: 576px) {    }
+@media (min-width: 576px) {
+
+}
   /* Tablet Portrait */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+}
 /* Tablet Landscape */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+}
 /* PC */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+}
+
 

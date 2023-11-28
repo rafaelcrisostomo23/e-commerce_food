@@ -4,49 +4,57 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="assets/logo-icone.ico" type="image/x-icon">
-        <link rel=styesheet type="text/css" href="style.css">
+        <link rel="stylesheet" href="style.css">
         <title>Home - Pastelaria Parapuã</title>
     </head>
 
     <body>
-<!-- Cabeçalho  -->
+        <!-- Cabeçalho com MENU -->
+        <header id="inicio">
 
-
-        <div class="logo"> 
+        <div class="logo" id="ilogo"> 
             <img src="assets/logo/logo-home.png" alt="imagens da logo pastelaria">
         </div>
 
+            <nav>
+                <div class="menu" id="imenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="autor.html">Sobre o Autor</a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="autor.html">Sobre o Autor</a></li>
-            </ul>
-            
-            
-        </div>
+        </header>
+
         <hr color="red">  
 
-        <h4>Pastelaria Parapuã</h4>
-            <p><i>Pasteis caseiros, feitos com ingredientes frescos e de qualidade. Aqui você encontra os sabores mais tradicionais e também opções inovadoras. Venha experimentar nossas delícias!</i></p>
+        <!-- Sobre/Corpo -->
+            
+        <main>
+            <div class="corpo">
+                <h4>Pastelaria Parapuã</h4>
+                    <p>Pasteis caseiros, feitos com ingredientes frescos e de qualidade. Aqui você encontra os sabores mais tradicionais e também opções inovadoras. Venha experimentar nossas delícias!</p>
 
-        <h4>Temos coxinhas fritas na hora!</h4>
-            <p><i>Coxinhas caseiras, feitas com frango desfiado, temperos frescos e catupiry. Crocantes por fora e cremosas por dentro, nossas coxinhas são o melhor lanche da cidade.</i></p>
+                <h4>Temos coxinhas fritas na hora!</h4>
+                    <p>Coxinhas caseiras, feitas com frango desfiado, temperos frescos e catupiry. Crocantes por fora e cremosas por dentro, nossas coxinhas são o melhor lanche da cidade.</p>
 
-        <h4>Bolinhas de queijo de dar água na boca</h4>
-            <p><i>Bolinhas de queijo caseiras, feitas com queijo mussarela, ovos, farinha de trigo e temperos frescos. Crocantes por fora, macias por dentro e cheias de sabor, nossas bolinhas de queijo são perfeitas para um lanche rápido e delicioso.</i></p>
+                <h4>Bolinhas de queijo de dar água na boca</h4>
+                    <p>Bolinhas de queijo caseiras, feitas com queijo mussarela, ovos, farinha de trigo e temperos frescos. Crocantes por fora, macias por dentro e cheias de sabor, nossas bolinhas de queijo são perfeitas para um lanche rápido e delicioso.</p>
+            </div>            
+        </main>
+        
+        
 
+        <footer>
             <div class="rodape">
                 <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@alunoifce.edu.br</p>
             </div>
-
-<!-- <footer></footer> -->
+        </footer>
 
     </body>
 
-    <script>
-        document.querySelector(".menu ul").style.display = "flex";
-    </script>
+
 </html>

@@ -12,16 +12,41 @@
   justify-content: center;
 }
 
-.menu a {
-  display: grid;
-  font-family: 'Chewy';
-  font-size: 2em;
-  justify-content: center; 
+nav {
+  display: flex;
+  justify-content: center
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(193, 0, 22);
+  text-align: center;
+  padding: 4px 16px;
+  text-decoration: none;
 }
 
 .menu a {
-  
+  display: flex;
+  font-family: 'Chewy';
+  font-size: 1.6em;
+  justify-content: center; 
 }
+
+.menu a:hover {
+  color: #581200;
+}
+
 
 /* Smartphone Landscape */
 @media (min-width: 576px) {

@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <!-- Destinado a caracter4es especiais -->
-        <meta charset="UTF-8"> 
-        <!-- Adapatação da tela em varios formatos -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Icone de favoritos - favicon-->
-        <link rel="shortcut icon" href="..\imagens\logo-icone.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <!-- Titulo da página -->
-        <title>Cardápio - Pastelaria Parapuã</title>
-    </head>
-<!-- Cabeçalho com MENU -->
+
+<head>
+    <!-- Destinado a caracter4es especiais -->
+    <meta charset="UTF-8">
+    <!-- Adapatação da tela em varios formatos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icone de favoritos - favicon-->
+    <link rel="shortcut icon" href="..\imagens\logo-icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Titulo da página -->
+    <title>Cardápio - Pastelaria Parapuã</title>
+</head>
+
 <header id="inicio">
 
-    <div class="logo" id="ilogo"> 
+    <div class="logo" id="ilogo">
         <img src="assets/logo/cardapio.png" alt="imagens da logo pastelaria">
     </div>
 
-        <nav>
-            <div class="menu" id="imenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li> 
-                    <li><a href="cardapio.html">Cardápio</a></li>
-                    <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="autor.html">Sobre o Autor</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
-
-        <hr color="red">  
-
-        <div class="item" id="item">
+    <nav>
+        <div class="menu" id="imenu">
             <ul>
-                <li><input type="checkbox" onclick="updateCount()"> Item 1</li>
-                <li><input type="checkbox" onclick="updateCount()"> Item 2</li>
-                <li><input type="checkbox" onclick="updateCount()"> Item 3</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="autor.html">Sobre o Autor</a></li>
             </ul>
-            <button onclick="addItem()">Adicionar Item</button>
-            <p>Itens selecionados: <span id="itemCount">0</span></p>
         </div>
-        
+    </nav>
 
-        <footer>
-            <div class="rodape">
-                <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@alunoifce.edu.br</p>
-            </div>
-        </footer>
-        
-    </body>
+</header>
 
-    <script>
-            function addItem() {
-                var itemList = document.getElementById("itemList");
-                var listItem = document.createElement("li");
-                var checkbox = document.createElement("input");
-                checkbox.type = "checkbox";
-                checkbox.onclick = function () {
-                    updateCount();
-                }
-                listItem.appendChild(checkbox);
-                listItem.innerHTML += " Novo Item";
-                itemList.appendChild(listItem);
-            
-                // Atualiza o contador de itens
-                updateCount();
+<hr color="red">
+
+<div class="item" id="item">
+    <ul>
+        <li><input type="checkbox" onclick="updateCount()"> Item 1</li>
+        <li><input type="checkbox" onclick="updateCount()"> Item 2</li>
+        <li><input type="checkbox" onclick="updateCount()"> Item 3</li>
+    </ul>
+    <button onclick="addItem()">Adicionar Item</button>
+    <p>Itens selecionados: <span id="itemCount">0</span></p>
+</div>
+
+
+<footer>
+    <div class="rodape">
+        <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@alunoifce.edu.br</p>
+    </div>
+</footer>
+
+</body>
+
+<script>
+    function addItem() {
+        var itemList = document.getElementById("itemList");
+        var listItem = document.createElement("li");
+        var checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.onclick = function () {
+            updateCount();
+        }
+        listItem.appendChild(checkbox);
+        listItem.innerHTML += " Novo Item";
+        itemList.appendChild(listItem);
+
+        // Atualiza o contador de itens
+        updateCount();
+    }
+
+    function updateCount() {
+        var checkboxes = document.getElementsByTagName("input");
+        var checkedCount = 0;
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].type === "checkbox" && checkboxes[i].checked) {
+                checkedCount++;
             }
-            
-            function updateCount() {
-                var checkboxes = document.getElementsByTagName("input");
-                var checkedCount = 0;
-                for (var i = 0; i < checkboxes.length; i++) {
-                    if (checkboxes[i].type === "checkbox" && checkboxes[i].checked) {
-                        checkedCount++;
-                    }
-                }
-                var itemCount = document.getElementById("itemCount");
-                itemCount.innerHTML = checkedCount;
-            }
-    </script>
+        }
+        var itemCount = document.getElementById("itemCount");
+        itemCount.innerHTML = checkedCount;
+    }
+</script>

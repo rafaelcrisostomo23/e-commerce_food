@@ -51,47 +51,23 @@ nav ul li a {
 }
 
 main {
-  padding: 20px 0px;
-  justify-content: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4e4e724d;
 }
 
-section{
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-  margin-left: 50px;
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.212);
 }
 
-.img-home img {
-  border-radius: 3em;
-  width: 556px;
+section {
+    background-color: aqua;
 }
 
-
-.texto-home {
-  padding: 0px 30px;
-  align-items: center;
-  margin-top: 30px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  line-height: 2em; 
-}
-
-.texto-home .nome {
-  color: rgb(193, 0, 22);
-}
-
-/* Smartphone Landscape */
-@media (min-width: 576px) {}
-
-/* Tablet Portrait */
-@media (min-width: 768px) {}
-
-/* Tablet Landscape */
-@media (min-width: 992px) {}
-
-/* PC */
-@media (min-width: 1200px) {}
+section

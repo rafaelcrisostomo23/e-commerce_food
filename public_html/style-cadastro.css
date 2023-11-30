@@ -60,25 +60,105 @@ main {
 }
 
 .container {
-    width: 90%;
-    height: 70%;
+    width: 80%;
+    height: 80vh;
     display: flex;
-    box-shadow: 10px 0px 10px rgba(3, 3, 3, 0.212);
+    ;
+    
+
+}
+
+.logo-login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+}
+
+img {
+    display: flex;
+    width: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50em;
+    align-items: center;
 }
 
 section {
-    background-color: rgb(140, 140, 140);
     width: 100%;
-    display: grid        
+    display: grid;
 }
 
-.login-header{
-    background-color: rgb(126, 90, 90);
+form {
+    align-content: center;
+    line-height: 2.5em;
+    padding: 0px 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    ;
+}
+
+.form {
+    margin-bottom: 0%;
+    border-radius: 10px;
+    background-color: rgb(160, 160, 160);
+    box-shadow: 10px 10px 10px rgba(3, 3, 3, 0.212);
+}
+.form-login{
+    margin-bottom: ;
+    border-radius: 10px;
+    background-color: rgb(158, 113, 113);
+    box-shadow: 10px 10px 10px rgba(3, 3, 3, 0.212);
+
+}
+
+.form-header {
+padding: 20px;
 }
 
 .title {
-    align-items: center;
-    line-height: 2em;
+    align-content: center;
+    line-height: 3em;
+}
+
+.entrar-button button {
+    width: 100%;
+    margin-top: 1.5em;
+    border: none;
+    background-color: rgb(193, 0, 22);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.entrar-button button:hover {
+    background-color: rgb(185, 1, 23);
+}
+
+.entrar-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
 
 
+.continue-button button {
+    width: 100%;
+    margin-top: 1.5em;
+    border: none;
+    background-color: rgb(193, 0, 22);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-button button:hover {
+    background-color: rgb(185, 1, 23);
+}
+
+.continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}

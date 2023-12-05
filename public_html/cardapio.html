@@ -15,7 +15,7 @@
 
 <header id="inicio">
 
-    <div class="logo" id="ilogo">
+    <div class="logo" id="logo">
         <img src="assets/logo/cardapio.png" alt="imagens da logo pastelaria">
     </div>
 
@@ -29,56 +29,44 @@
             </ul>
         </div>
     </nav>
-
+<hr color="red">
 </header>
 
-<hr color="red">
+<body>
+    <div class="container">
+        <div id="root">
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200/300">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(0)">Adicionar</button>
+                    </div>
+            </div>
 
-<div class="item" id="item">
-    <ul>
-        <li><input type="checkbox" onclick="updateCount()"> Item 1</li>
-        <li><input type="checkbox" onclick="updateCount()"> Item 2</li>
-        <li><input type="checkbox" onclick="updateCount()"> Item 3</li>
-    </ul>
-    <button onclick="addItem()">Adicionar Item</button>
-    <p>Itens selecionados: <span id="itemCount">0</span></p>
-</div>
+            
+        </div>
+    </div>
 
+    <div class="sidebar">
+        <div class="head"><p>My Cart</p></div>
+        <div id="cartItem">Your cart is empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+        </div>
+    </div>
+
+</body>
 
 <footer>
-    <div class="rodape">
+    <div class="footer">
         <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@alunoifce.edu.br</p>
     </div>
 </footer>
 
 </body>
 
-<script>
-    function addItem() {
-        var itemList = document.getElementById("itemList");
-        var listItem = document.createElement("li");
-        var checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.onclick = function () {
-            updateCount();
-        }
-        listItem.appendChild(checkbox);
-        listItem.innerHTML += " Novo Item";
-        itemList.appendChild(listItem);
-
-        // Atualiza o contador de itens
-        updateCount();
-    }
-
-    function updateCount() {
-        var checkboxes = document.getElementsByTagName("input");
-        var checkedCount = 0;
-        for (var i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].type === "checkbox" && checkboxes[i].checked) {
-                checkedCount++;
-            }
-        }
-        var itemCount = document.getElementById("itemCount");
-        itemCount.innerHTML = checkedCount;
-    }
-</script>

@@ -8,17 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Icone de favoritos - favicon-->
     <link rel="shortcut icon" href="..\imagens\logo-icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cardapio.css">
     <!-- Titulo da página -->
     <title>Cardápio - Pastelaria Parapuã</title>
 </head>
 
 <header id="inicio">
-
+<!-- LOGO -->
     <div class="logo" id="logo">
         <img src="assets/logo/cardapio.png" alt="imagens da logo pastelaria">
     </div>
-
+<!-- MENU DE NAVEGAÇÃO -->
     <nav>
         <div class="menu" id="imenu">
             <ul>
@@ -37,7 +37,7 @@
         <div id="root">
             <div class="box">
                 <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200/300">
+                    <img class="images" src="https://picsum.photos/id/23/200">
                 </div>
                     <div class="bottom">
                         <h1>Produto</h1>
@@ -47,24 +47,120 @@
                     </div>
             </div>
 
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(1)">Adicionar</button>
+                    </div>
+            </div>
+
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(2)">Adicionar</button>
+                    </div>
+            </div>
+
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(3)">Adicionar</button>
+                    </div>
+            </div>
+
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(3)">Adicionar</button>
+                    </div>
+            </div>
             
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(3)">Adicionar</button>
+                    </div>
+            </div>
+            
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(3)">Adicionar</button>
+                    </div>
+            </div>
+            
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(3)">Adicionar</button>
+                    </div>
+            </div>
+            
+            <div class="box">
+                <div class="img-box">
+                    <img class="images" src="https://picsum.photos/id/23/200">
+                </div>
+                    <div class="bottom">
+                        <h1>Produto</h1>
+                        <p>Descrição do produto</p>
+                        <h2>R$ 123.00</h2>
+                        <button onclick="addtocart(3)">Adicionar</button>
+                    </div>
+            </div>
         </div>
+
+        <div class="sidebar">
+            <div class="head"><p>Meu carrinho</p></div>
+            <div id="cartItem">Seu carrinho está vazio</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">R$ 0.00</h2>
+            </div>
+        </div>
+    
     </div>
 
-    <div class="sidebar">
-        <div class="head"><p>My Cart</p></div>
-        <div id="cartItem">Your cart is empty</div>
-        <div class="foot">
-            <h3>Total</h3>
-            <h2 id="total">$ 0.00</h2>
-        </div>
-    </div>
-
+    
 </body>
 
 <footer>
     <div class="footer">
-        <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@alunoifce.edu.br</p>
+        <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@aluno.ifce.edu.br</p>
     </div>
 </footer>
 

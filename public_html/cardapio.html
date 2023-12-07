@@ -2,167 +2,172 @@
 <html lang="pt-br">
 
 <head>
-    <!-- Destinado a caracter4es especiais -->
     <meta charset="UTF-8">
-    <!-- Adapatação da tela em varios formatos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icone de favoritos - favicon-->
-    <link rel="shortcut icon" href="..\imagens\logo-icone.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/logo-icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="cardapio.css">
-    <!-- Titulo da página -->
+    <script src="cardapio.js" crossorigin="anonymous"></script>
     <title>Cardápio - Pastelaria Parapuã</title>
 </head>
 
-<header id="inicio">
-<!-- LOGO -->
-    <div class="logo" id="logo">
-        <img src="assets/logo/cardapio.png" alt="imagens da logo pastelaria">
-    </div>
-<!-- MENU DE NAVEGAÇÃO -->
-    <nav>
-        <div class="menu" id="imenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="autor.html">Sobre o Autor</a></li>
-            </ul>
+    <body>
+        <header id="inicio">
+        <!-- LOGO -->
+            <div class="logo" id="logo">
+                <img src="assets/logo/cardapio.png" alt="imagens da logo pastelaria">
+            </div>
+        <!-- MENU DE NAVEGAÇÃO -->
+            <nav>
+                <div class="menu" id="imenu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="autor.html">Sobre o Autor</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <hr color="red">
+        </header>
+
+        <main>
+            <div class="container">
+            <div id="root">
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>001 - HAMBÚRGUER </h1>
+                            <p>120g Carne bovina, Cheddar cremoso, Molho da alho no Pão brioche.
+                            </p>
+                            <h2>R$ 14.00</h2>
+                            <button onclick="addtocart(0)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>002 - CHEESE BURGUER
+                            </h1>
+                            <p>120g Carne bovina, Queijo coalho, Cheddar cremoso, Molho da alho no Pão brioche.
+                            </p>
+                            <h2>R$ 16.00</h2>
+                            <button onclick="addtocart(1)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>003 - CHEESE BACON
+                            </h1>
+                            <p>120g Carne bovina, Queijo coalho, Cheddar cremoso, Molho da alho no Pão brioche.</p>
+                            <h2>R$ 19.00</h2>
+                            <button onclick="addtocart(2)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>Produto</h1>
+                            <p>Descrição do produto</p>
+                            <h2>R$ 123.00</h2>
+                            <button onclick="addtocart(3)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>Produto</h1>
+                            <p>Descrição do produto</p>
+                            <h2>R$ 123.00</h2>
+                            <button onclick="addtocart(3)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>Produto</h1>
+                            <p>Descrição do produto</p>
+                            <h2>R$ 123.00</h2>
+                            <button onclick="addtocart(3)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>Produto</h1>
+                            <p>Descrição do produto</p>
+                            <h2>R$ 123.00</h2>
+                            <button onclick="addtocart(3)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>Produto</h1>
+                            <p>Descrição do produto</p>
+                            <h2>R$ 123.00</h2>
+                            <button onclick="addtocart(3)">Adicionar</button>
+                        </div>
+                </div>
+
+                <div class="box">
+                    <div class="img-box">
+                        <img class="images" src="https://picsum.photos/id/23/200">
+                    </div>
+                        <div class="bottom">
+                            <h1>Produto</h1>
+                            <p>Descrição do produto</p>
+                            <h2>R$ 123.00</h2>
+                            <button onclick="addtocart(3)">Adicionar</button>
+                        </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+            <div class="topo">
+                <div class="head"><h1>Meu carrinho</h1>
+                <div class="cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i><p id="count">0</p></div>
+                </div>
+            </div>
+                <div id="cartItem">Seu carrinho está vazio</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">R$ 0.00</h2>
+                </div>
+            </div>
+        
+            </div>
+        </main>
+
+
+    </body>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@aluno.ifce.edu.br</p>
         </div>
-    </nav>
-<hr color="red">
-</header>
-
-<body>
-    <div class="container">
-        <div id="root">
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(0)">Adicionar</button>
-                    </div>
-            </div>
-
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(1)">Adicionar</button>
-                    </div>
-            </div>
-
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(2)">Adicionar</button>
-                    </div>
-            </div>
-
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(3)">Adicionar</button>
-                    </div>
-            </div>
-
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(3)">Adicionar</button>
-                    </div>
-            </div>
-            
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(3)">Adicionar</button>
-                    </div>
-            </div>
-            
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(3)">Adicionar</button>
-                    </div>
-            </div>
-            
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(3)">Adicionar</button>
-                    </div>
-            </div>
-            
-            <div class="box">
-                <div class="img-box">
-                    <img class="images" src="https://picsum.photos/id/23/200">
-                </div>
-                    <div class="bottom">
-                        <h1>Produto</h1>
-                        <p>Descrição do produto</p>
-                        <h2>R$ 123.00</h2>
-                        <button onclick="addtocart(3)">Adicionar</button>
-                    </div>
-            </div>
-        </div>
-
-        <div class="sidebar">
-            <div class="head"><p>Meu carrinho</p></div>
-            <div id="cartItem">Seu carrinho está vazio</div>
-            <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">R$ 0.00</h2>
-            </div>
-        </div>
-    
-    </div>
-
-    
-</body>
-
-<footer>
-    <div class="footer">
-        <p>&copy; 2023 | Autor: Rafael Crisostomo | E-mail: crisostomo.rafael04@aluno.ifce.edu.br</p>
-    </div>
-</footer>
-
-</body>
+    </footer>
 

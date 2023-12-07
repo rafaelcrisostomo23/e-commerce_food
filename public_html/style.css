@@ -8,7 +8,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .logo {
   display: flex;
   justify-content: center;
@@ -53,7 +52,26 @@ nav ul li a {
 main {
   padding: 20px 0px;
   justify-content: center;
+  background: rgba(216, 216, 216, 0.212);
 }
+
+body{
+  font-family: 'Montserrat';
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.header{
+  margin:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
 
 section{
   display: flex;
